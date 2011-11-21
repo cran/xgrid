@@ -1,0 +1,14 @@
+1b73fcbc38303723d77a2337c0decb83 *DESCRIPTION
+923c7c727c13758a89be33499f967b45 *R/xgrid.R
+607eee2fdaeb8ff782b42f02f9a71ad6 *inst/doc/Sweave.sty
+5a10ae4677f779d85c2fc77f49dcd30e *inst/doc/example1-source.pdf
+f4dffbbd96864a154b0b66538b219b44 *inst/doc/example1.Rnw
+e236cc3b568697610bb02fe2e18ea5a7 *inst/doc/example1.pdf
+6a1ba24d2b5a2d87a358ead52f06aaa9 *inst/doc/example2-source.pdf
+4a4ee7e30fa0c11de5d9a993620e49d0 *inst/doc/example2.Rnw
+91457ef9fd79d56f01ada77009cee1df *inst/doc/example2.pdf
+3dd60a413462abe038534e5611c93a10 *man/xgrid.Rd
+2a2d5022a4709e0049122f0e939a0862 *man/xgridattr.Rd
+3f30de30915696dd6011f4954c532e17 *man/xgriddelete.Rd
+6091a6a71f668fd276980089c05c1941 *man/xgridresults.Rd
+cc42b85a157ce943908c6732cc095c43 *man/xgridsubmit.Rd
