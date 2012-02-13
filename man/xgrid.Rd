@@ -11,7 +11,7 @@ submit a set of jobs to an Apple Xgrid, letting the grid deal with scheduling an
 xgrid(grid = "localhost", numsim = 20, ntask = 1, 
   indir = "input", outdir = "output", param = 1, 
   Rcmd = "runjob.R", auth = "None", outfile = "RESULTS.rda", 
-  suffix = "RESULT", throttle = 20, sleeptime = 5, verbose = FALSE)
+  prefix = "RESULT", throttle = 9999, sleeptime = 5, verbose = FALSE)
 }
 
 \arguments{
@@ -38,15 +38,18 @@ R script file within the \code{input} directory to be run by the remote agent
 }
   \item{auth}{
 authorization to use to access the grid: options are "None" (default), "Kerberos" or "Password"
+(if "Password" then the environment variable \env{XGRID_CONTROLLER_PASSWORD} should contain 
+the password)
 }
   \item{outfile}{
 directory to return output created by the remote job
 }
-  \item{suffix}{
-file suffix to use to name individual job results files
+  \item{prefix}{
+file prefix to add to the beginning of the name of individual job results files
 }
   \item{throttle}{
-maximum number of jobs to run at one time (default = 20)
+maximum number of jobs to run at one time (default = 9999), to avoid being greedy
+on a shared Xgrid
 }
   \item{sleeptime}{
 number of seconds to sleep after checking for completion of a remote job (default = 1 second)
@@ -91,7 +94,7 @@ is provided.  This requires that packages are installed into the \code{input} di
 \code{lib.loc} option to \code{library} by the remote job.
 
 Larger values of \code{sleeptime} may lead to longer job latency upon completion, but will 
-provide less of a load on the network.
+provide less of a load on the grid.
 }
 
 \seealso{
