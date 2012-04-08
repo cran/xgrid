@@ -2,15 +2,15 @@
 \alias{xgrid}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-submit a set of jobs to an Apple Xgrid
+Submit a Set of Jobs to an Apple Xgrid
 }
 \description{
-submit a set of jobs to an Apple Xgrid, letting the grid deal with scheduling and load balancing
+Submit a set of jobs to an Apple Xgrid, letting the grid deal with scheduling and load balancing.
 }
 \usage{
 xgrid(grid = "localhost", numsim = 20, ntask = 1, 
   indir = "input", outdir = "output", param = 1, 
-  Rcmd = "runjob.R", auth = "None", outfile = "RESULTS.rda", 
+  Rcmd = "runjob.R", auth = "None", outfile = "RESULTS.rds", 
   prefix = "RESULT", throttle = 9999, sleeptime = 5, verbose = FALSE)
 }
 
